@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.1)
-project(submoduledemo LANGUAGES NONE)
+project(Demo LANGUAGES NONE)
 enable_testing()
 
 include(CheckLanguage)
