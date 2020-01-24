@@ -1,13 +1,7 @@
-cmake_minimum_required(VERSION 3.1)
-project(Demo LANGUAGES NONE)
-enable_testing()
+cmake_minimum_required(VERSION 3.14)
+project(child LANGUAGES Fortran)
 
-include(CheckLanguage)
-check_language(Fortran)
-if(CMAKE_Fortran_COMPILER)
-  enable_language(Fortran)
-
-  add_executable(errorstop errorstop.f90)
-  add_test(NAME ErrorStop COMMAND errorstop)
-  set_tests_properties(ErrorStop PROPERTIES WILL_FAIL true)
-endif()
+add_library(times_two times_two.f90)
+target_include_directories(times_two INTERFACE ${CMAKE_CURRENT_BINARY_DIR}/include)
+set_target_properties(times_two PROPERTIES
+  Fortran_MODULE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/include)

@@ -1,1 +1,2 @@
 meson>=0.50
+ninja

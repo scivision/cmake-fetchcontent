@@ -1,8 +1,4 @@
-project('Demo',
-  default_options : ['default_library=static', 'buildtype=release'])
+project('child', 'fortran'
+  default_options : ['default_library=static', 'buildtype=release', 'warning_level=3'])
 
-if add_languages('fortran')
-  errorstop = executable('errorstop', 'errorstop.f90')
-  test('ErrorStop', errorstop,
-    should_fail: true)
-endif
+multiplier = library('times_two', 'times_two.f90')

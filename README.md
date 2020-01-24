@@ -1,9 +1,8 @@
-[![Build Status](https://travis-ci.com/scivision/hellofortran.svg?branch=master)](https://travis-ci.com/scivision/hellofortran)
-
 # Hello World: Fortran
 
-A dummy repo used by scivision/cmake-utils demonstrating modern CMake and Fortran  external project distribution
+[![Actions Status](https://github.com/scivision/fortran2018-examples/workflows/ci_linux/badge.svg)](https://github.com/scivision/fortran2018-examples/actions)
 
+A dummy repo used by scivision/cmake-utils demonstrating modern CMake and Fortran  external project distribution
 
 ## Note
 
