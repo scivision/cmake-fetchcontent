@@ -1,4 +1,5 @@
-cmake_minimum_required(VERSION 3.14)
+cmake_minimum_required(VERSION 3.14...3.20)
+
 project(child LANGUAGES Fortran)
 
 add_library(times_two times_two.f90)
