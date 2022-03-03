@@ -1,4 +1,3 @@
-project('child', 'fortran'
-  default_options : ['default_library=static', 'buildtype=release', 'warning_level=3'])
+project('child', 'fortran')
 
-multiplier = library('times_two', 'times_two.f90')
+multiplier = library('multiplier', 'multiplier.f90')
