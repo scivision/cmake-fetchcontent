@@ -1,12 +1,12 @@
-cmake_minimum_required(VERSION 3.14...3.23)
+cmake_minimum_required(VERSION 3.14...3.24)
 
 project(child
 LANGUAGES Fortran
-VERSION 1.3.0
+VERSION 1.4.0
 )
 
 add_library(multiplier multiplier.f90)
-target_include_directories(multiplier INTERFACE
+target_include_directories(multiplier PUBLIC
 $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include>
 $<INSTALL_INTERFACE:include>
 )
